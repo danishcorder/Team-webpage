@@ -5,51 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#about">About Us</a>
+    <a href="#team-leader">Team Leader</a>
+    <a href="#team-members">Team Members</a>
+    <a href="#contact">Contact</a>
+    <button id="dark-mode-toggle">Dark Mode</button>
+  </nav>
+
+  <!-- Background -->
   <div class="background"></div>
+
+  <!-- Header -->
   <header>
     <h1>Our Team</h1>
   </header>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>We are a team of passionate and skilled professionals working together to achieve excellence in our projects. With diverse expertise and a collaborative spirit, we aim to deliver outstanding results and make a positive impact.</p>
+  </section>
+
+  <!-- Team Leader Section -->
   <main>
-    <section class="team-leader">
-      <!-- Team Leader -->
+    <section id="team-leader" class="team-leader">
       <div class="member leader">
         <img src="images/danish.jpg.jpg" alt="Muhammad Danish">
         <a href="portfolio/danish.html">Muhammad Danish</a>
         <p>Team Leader</p>
       </div>
     </section>
-    <section class="team-members">
-      <!-- Other Members -->
-      <div class="member">
-        <img src="images/khadija.jpg" alt="Member 1">
-        <a href="portfolio/khadija.html">khadija Samar</a>
+
+    <!-- Team Members Section -->
+    <section id="team-members" class="team-members">
+      <h2>Team Members</h2>
+      <div class="filters">
+        <button data-role="all">All</button>
+        <button data-role="developer">Developers</button>
+        <button data-role="designer">Designers</button>
       </div>
-      <div class="member">
-        <img src="member2.jpg" alt="Member 2">
+      <div class="member" data-role="developer">
+        <img src="images/khadija.jpg" alt="Khadija Samar">
+        <a href="portfolio/khadija.html">Khadija Samar</a>
+      </div>
+      <div class="member" data-role="designer">
+        <img src="images/hadisa.jpg" alt="Hadisa Mariyam">
         <a href="portfolio/hadisa.html">Hadisa Mariyam</a>
       </div>
-      <div class="member">
-        <img src="member3.jpg" alt="Member 3">
+      <div class="member" data-role="developer">
+        <img src="member3.jpg" alt="Muhammad Muzamil">
         <a href="portfolio/muzamil.html">Muhammad Muzamil</a>
       </div>
-      <div class="member">
-        <img src="member4.jpg" alt="Member 4">
+      <div class="member" data-role="designer">
+        <img src="images/azra.jpg" alt="Azra Shahbaz">
         <a href="portfolio/azra.html">Azra Shahbaz</a>
       </div>
-      <div class="member">
-        <img src="member5.jpg" alt="Member 5">
+      <div class="member" data-role="developer">
+        <img src="member5.jpg" alt="Kainat Aslam">
         <a href="portfolio/kainat.html">Kainat Aslam</a>
       </div>
-      <div class="member">
-        <img src="member6.jpg" alt="Member 6">
-        <a href="portfolio/kaifa.html">kaifa Shareef</a>
+      <div class="member" data-role="designer">
+        <img src="member6.jpg" alt="Kaifa Shareef">
+        <a href="portfolio/kaifa.html">Kaifa Shareef</a>
       </div>
     </section>
   </main>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: contact@teamportfolio.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Address: 123 Team Street, Innovation City</p>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Team Portfolio. All rights reserved.</p>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">↑</button>
 </body>
 </html>
