@@ -155,8 +155,6 @@ footer a {
   text-decoration: none;
 }
 
-/* Additional Features */
-
 /* Navigation Bar */
 .navbar {
   display: flex;
@@ -215,26 +213,51 @@ footer a {
   line-height: 1.8;
 }
 
-/* Contact Section */
+/* Enhanced Contact Section */
 .contact-section {
   text-align: center;
-  padding: 40px 20px;
-  background: #f5f5f5;
-  border-top: 1px solid #ddd;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: #ffffff;
+  border-top: none;
 }
 
 .contact-section h2 {
-  margin-bottom: 15px;
-  font-size: 2.5rem;
-  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.7rem;
+  color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .contact-section p {
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
   font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 10px;
-  line-height: 1.5;
+  color: #2575fc;
+  background: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s all;
+}
+
+.contact-section a:hover {
+  background: #f0f0f0;
+  color: #6a11cb;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Back to Top Button */
