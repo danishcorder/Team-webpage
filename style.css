@@ -1,0 +1,179 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a; /* fallback if bg image doesn't load */
+  color: #ffffff;
+}
+
+/* Background Image Overlay */
+.background-overlay {
+  background: url('your-background.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Container */
+.team-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* === TEAM LEADER === */
+.team-leader {
+  margin-bottom: 50px;
+}
+
+.team-leader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffd700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.team-leader img:hover {
+  transform: scale(1.05);
+}
+
+.team-leader .name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.team-leader .name:hover {
+  text-decoration: underline;
+  color: #aad4ff;
+}
+
+.team-leader .role {
+  color: #ffd700;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* === TEAM GRID === */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+  padding: 0 20px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.member img:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+.member p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.member p:hover {
+  text-decoration: underline;
+  color: #aad4ff;
+}
+
+/* === MODAL (Portfolio) === */
+.portfolio-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #f87171;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .team-leader img,
+  .member img {
+    width: 90px;
+    height: 90px;
+  }
+}
