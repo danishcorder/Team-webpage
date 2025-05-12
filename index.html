@@ -6,6 +6,39 @@
   <title>Team Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <style>
+    /* New project layout style */
+    .projects {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    .project {
+      text-align: center;
+      min-width: 200px;
+      max-width: 200px;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .project a {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .project a:hover {
+      color: #007BFF;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -13,8 +46,8 @@
     <a href="#about">About Us</a>
     <a href="#team-leader">Team Leader</a>
     <a href="#team-members">Team Members</a>
+    <a href="#famous-projects">Projects</a> <!-- Updated Projects button -->
     <a href="#contact">Contact</a>
-    
   </nav>
 
   <!-- Background -->
@@ -22,7 +55,7 @@
 
   <!-- Header -->
   <header>
-    <h1> TeckSparks Team</h1>
+    <h1>TeckSparks Team</h1>
   </header>
 
   <!-- About Us Section -->
@@ -57,8 +90,8 @@
         <img src="images/hadisa.jpg" alt="Hadisa Mariyam">
         <a href="portfolio/hadisa.html">Hadisa Mariyam</a>
       </div>
-      <div class="member" data-role="Designers">
-        <img src="member3.jpg" alt="Muhammad Muzamil">
+      <div class="member" data-role="designer">
+        <img src="images/muzamil.jpg" alt="Muhammad Muzamil">
         <a href="portfolio/muzamil.html">Muhammad Muzamil</a>
       </div>
       <div class="member" data-role="designer">
@@ -72,6 +105,25 @@
       <div class="member" data-role="designer">
         <img src="images/kaifa.jpg" alt="Kaifa Shareef">
         <a href="portfolio/kaifa.html">Kaifa Shareef</a>
+      </div>
+    </section>
+
+    <!-- Famous Projects Section -->
+    <section id="famous-projects" class="famous-projects">
+      <h2>Famous Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="images/eventproject.jpeg" alt="EventX 2025">
+          <a href="projects/eventproject.html">EventX 2025</a>
+        </div>
+        <div class="project">
+          <img src="images/portfolio.png" alt="Project Personal Portfolios">
+          <a href="projects/portfolios.html">Personal Portfolios</a>
+        </div>
+        <div class="project">
+          <img src="images/project3.jpg" alt="Project Gamma">
+          <a href="projects/project3.html">Project Gamma</a>
+        </div>
       </div>
     </section>
   </main>
