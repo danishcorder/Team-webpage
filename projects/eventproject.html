@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <style>
+        body {
+            /* Gradient background (fallback) */
+            background: linear-gradient(135deg, #e0eafc99 0%, #cfdef399 100%),url('https://workik.com/staticassets/images/event%20cover%20photo.webp');
+            /* Background image option */
+            /* Uncomment the next line and replace the URL to use a background image */
+            /* background-image: url('your-image-url.jpg'); */
+            /* To blend image and gradient, use: */
+            /* background-image: linear-gradient(135deg, #e0eafc99 0%, #cfdef399 100%), url('your-image-url.jpg'); */
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            color: #2d3a4b;
+            text-shadow: 1px 2px 8px #b0c4de;
+        }
+        p {
+            color: #3a4a5d;
+        }
+        a {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 24px;
+            background: #4f8cff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.15);
+            transition: background 0.2s;
+        }
+        a:hover {
+            background: #2563eb;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member's Projects</title>
